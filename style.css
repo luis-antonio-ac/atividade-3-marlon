@@ -8,11 +8,12 @@ html,
 body {
     width: 100vw;
     height: 100%;
+    overflow: hidden;
 }
 
 main {
     width: 100%;
-    height: 100%;
+    height: 95%;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
@@ -20,7 +21,7 @@ main {
 
 section {
     width: 50%;
-    height: 95%;
+    height: 100%;
 }
 
 section img,
@@ -29,4 +30,30 @@ section img {
     height: 100%;
     object-fit: cover;
     object-position: center;
+}
+
+footer,
+nav,
+ul {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li:not(:first-child) {
+    margin-left: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+a.active {
+    text-decoration: underline;
 }
